@@ -1,0 +1,162 @@
+.header{
+  background-color: #151314;
+  padding: 10px 100px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.nav-menu>li>a{
+  color: aliceblue;
+  padding: 5px 10px;
+  transition: all .22s ease;
+}
+.nav-menu>li>a:hover{
+  color: orange;
+  transform: scale(1.1);
+}
+.logo{
+  width: 120px;
+  height: 60px;
+  border-radius: 10px;
+}
+.HeaderClass{
+  background-image: url("./assets/background.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: aliceblue;
+  padding: 10% 15%;
+}
+.header-div{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.box{
+  width: 48%;
+  padding: 5px;
+}
+.box>h3{
+  color: white;
+  font-size: 35px;
+  font-style: italic;
+  font-weight: 700;
+}
+.box>h1{
+  font-size: 65px;
+  color: grey;
+  font-style: normal;
+  font-weight:900;
+}
+.box>p{
+  font-size: 17;
+  font-weight: 400;
+
+}
+#box2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#box2>img{
+  transition: all .22s ease;
+}
+#box2>img:hover{
+  transform: scale(1.05);
+}
+.header-btn{
+  font-size: 25px;
+  background-color: transparent;
+  color: aliceblue;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .82s ease;
+}
+.header-btn:hover{
+  background-color: rgb(71, 71, 71)
+}
+.main{
+  padding: 100px 5%;
+}
+.m-box{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.m-box>h2{
+  font-size: 30px;
+  font-weight: 900;
+  color: orange;
+}
+.m-box>p{
+  text-align: center;
+  font-size: 18px;
+  font-weight: 200;
+}
+.m-box>img{
+  width: 300px;
+}
+.m-hr{
+  margin: 100px 0px;
+}
+.m-feature{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.m-feature2>img{
+  width: 500px;
+  height: 400px;
+}
+
+@media only screen and (max-width: 920px) {
+  .box>h1{
+    font-size: 30px;
+  }.box>h3{
+    font-size: 20px;
+  }
+  .box>p{
+    font-size: 17;  
+  }
+  .HeaderClass{
+    padding: 200px 10%;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .box>h1{
+    font-size: 35px;
+  }.box>h3{
+    font-size: 25px;
+  }
+  .box>p{
+    font-size: 15;  
+  }
+  .HeaderClass{
+    padding: 220px 2%;
+  }
+  .header-div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .box{
+    width: 100%;
+    padding: 5px;
+  }
+}
